@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ol>
+          <button (click) ="dispalyDetails()">Display Details</button>
+          <p *ngIf ="displayPara">Secret Password = tuna</p>
+          <div *ngFor= "let logItems of logs" 
+            [ngStyle] = "{ backgroundColor : logItems >=5 ? 'blue': 'transparent'}"
+            [ngClass] = "logItems >=5 ? 'display-color' : null">
+            {{ logItems }}
+          </div>
+        </ol>
+      </div>
+    </div>
+  </div>
+  

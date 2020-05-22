@@ -1,0 +1,8 @@
+<app-game-control 
+(startGame) ="onStartGame($event)">
+</app-game-control>
+<app-odd *ngFor = "let oddNos of oddNo" [oddNumber] = "oddNos">
+</app-odd>
+<app-even *ngFor = "let evenNos of evenNo" [evenNumber] = "evenNos">
+</app-even>
+
